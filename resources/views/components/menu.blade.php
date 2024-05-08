@@ -75,7 +75,7 @@
                 <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
                   <i class="material-icons opacity-10">login</i>
                 </div>
-                <span class="nav-link-text ms-1">Sign In</span>
+                <span class="nav-link-text ms-1">Entrar</span>
               </a>
             </li>
             <li class="nav-item">
@@ -83,17 +83,12 @@
                 <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
                   <i class="material-icons opacity-10">assignment</i>
                 </div>
-                <span class="nav-link-text ms-1">Sign Up</span>
+                <span class="nav-link-text ms-1">Registrar</span>
               </a>
             </li>
           </ul>
         </div>
-        <div class="sidenav-footer position-absolute w-100 bottom-0 ">
-          <div class="mx-3">
-            <a class="btn btn-outline-primary mt-4 w-100" href="https://www.creative-tim.com/learning-lab/bootstrap/overview/material-dashboard?ref=sidebarfree" type="button">Documentation</a>
-            <a class="btn bg-gradient-primary w-100" href="https://www.creative-tim.com/product/material-dashboard-pro?ref=sidebarfree" type="button">Upgrade to pro</a>
-          </div>
-        </div>
+
         </aside>
         <main class="main-content position-relative max-height-vh-100 h-100 border-radius-lg ">
         <!-- Navbar -->
@@ -109,17 +104,13 @@
             <div class="collapse navbar-collapse mt-sm-0 mt-2 me-md-0 me-sm-4" id="navbar">
               <div class="ms-md-auto pe-md-3 d-flex align-items-center">
                 <div class="input-group input-group-outline">
-                  <label class="form-label">Type here...</label>
+                  <label class="form-label">Pesquisar aqui...</label>
                   <input type="text" class="form-control">
                 </div>
               </div>
               <ul class="navbar-nav  justify-content-end">
-                <li class="nav-item d-flex align-items-center">
-                  <a class="btn btn-outline-primary btn-sm mb-0 me-3" target="_blank" href="https://www.creative-tim.com/builder?ref=navbar-material-dashboard">Online Builder</a>
-                </li>
-                <li class="mt-2">
-                  <a class="github-button" href="https://github.com/creativetimofficial/material-dashboard" data-icon="octicon-star" data-size="large" data-show-count="true" aria-label="Star creativetimofficial/material-dashboard on GitHub">Star</a>
-                </li>
+
+
                 <li class="nav-item d-xl-none ps-3 d-flex align-items-center">
                   <a href="javascript:;" class="nav-link text-body p-0" id="iconNavbarSidenav">
                     <div class="sidenav-toggler-inner">
@@ -210,7 +201,7 @@
                 <li class="nav-item d-flex align-items-center">
                   <a href="../pages/sign-in.html" class="nav-link text-body font-weight-bold px-0">
                     <i class="fa fa-user me-sm-1"></i>
-                    <span class="d-sm-inline d-none">Sign In</span>
+                    <span class="d-sm-inline d-none">Entrar</span>
                   </a>
                 </li>
               </ul>
