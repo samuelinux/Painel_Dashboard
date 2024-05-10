@@ -1,17 +1,3 @@
-<!--
-=========================================================
-* Material Dashboard 2 - v3.1.0
-=========================================================
-
-* Product Page: https://www.creative-tim.com/product/material-dashboard
-* Copyright 2023 Creative Tim (https://www.creative-tim.com)
-* Licensed under MIT (https://www.creative-tim.com/license)
-* Coded by Creative Tim
-
-=========================================================
-
-* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
--->
 <!DOCTYPE html>
 <html lang="en">
 
@@ -43,9 +29,9 @@
                   </a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link me-2" href="../profile">
+                  <a class="nav-link me-2" href="../perfil">
                     <i class="fa fa-user opacity-6 text-dark me-1"></i>
-                    Profile
+                    Perfil
                   </a>
                 </li>
                 <li class="nav-item">
@@ -82,12 +68,12 @@
               <div class="card card-plain">
                 <div class="card-header">
                   <h4 class="font-weight-bolder">Registrar</h4>
-                  <p class="mb-0">Enter your email and password to register</p>
+                  <p class="mb-0">Entre com seu email para se registrar</p>
                 </div>
                 <div class="card-body">
                   <form role="form">
                     <div class="input-group input-group-outline mb-3">
-                      <label class="form-label">Name</label>
+                      <label class="form-label">Nome</label>
                       <input type="text" class="form-control">
                     </div>
                     <div class="input-group input-group-outline mb-3">
@@ -101,7 +87,7 @@
                     <div class="form-check form-check-info text-start ps-0">
                       <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" checked>
                       <label class="form-check-label" for="flexCheckDefault">
-                        I agree the <a href="javascript:;" class="text-dark font-weight-bolder">Terms and Conditions</a>
+                        Eu aceito os <a href="javascript:;" class="text-dark font-weight-bolder">Termos e Condições</a>
                       </label>
                     </div>
                     <div class="text-center">
@@ -111,7 +97,7 @@
                 </div>
                 <div class="card-footer text-center pt-0 px-lg-2 px-1">
                   <p class="mb-2 text-sm mx-auto">
-                    Already have an account?
+                    Já tem uma conta?
                     <a href="../login" class="text-primary text-gradient font-weight-bold">Login</a>
                   </p>
                 </div>
