@@ -3,7 +3,7 @@
 <html lang="en">
 <x-topo/>
 <body class="g-sidenav-show  bg-gray-200">
-  <x-menu/>
+  <x-menu xestilo="oficio"/>
 
 
 <!-- inicio oficio -->
@@ -39,24 +39,14 @@
           </select>
         </div>
 
-        <div class="input-group input-group-static mb-3">
-          <label class="ms-0">Setor de destino</label>
-          <select class="form-control" id="exampleFormControlSelect1">
-            <option></option>
-            <option>ILUMINAÇÃO</option>
-            <option>CEMITÉRIO</option>
-            <option>PODA</option>
-            <option>VARRIÇÃO</option>
-          </select>
+        <div class="input-group input-group-outline mb-3">
+          <label class="form-label">Setor de Destino</label>
+          <input type="text" class="form-control">
         </div>
 
-        <div class="input-group input-group-static mb-3">
-          <label class="ms-0">Destinatário</label>
-          <select class="form-control" id="exampleFormControlSelect1">
-            <option>SAMUEL</option>
-            <option>ROBISON</option>
-            <option>SAULO</option>
-          </select>
+        <div class="input-group input-group-outline mb-3">
+          <label class="form-label">Destinatário</label>
+          <input type="text" class="form-control">
         </div>
 
         <div class="input-group input-group-outline mb-3">

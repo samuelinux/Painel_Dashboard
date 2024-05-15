@@ -7,7 +7,7 @@
 
 <body class="g-sidenav-show  bg-gray-200">
 
-  <x-menu/>
+  <x-menu xestilo="dashboard"/>
 
   <x-home/>
 

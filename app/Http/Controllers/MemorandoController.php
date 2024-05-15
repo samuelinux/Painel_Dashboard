@@ -8,7 +8,7 @@ class MemorandoController extends Controller
 {
     public Function memorando(){
 
-        
-        return view('memorando', ['pagina_ativa' => 'memorando']);
+        //dd($request);
+        return view('memorando');
     }
 }

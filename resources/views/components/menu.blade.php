@@ -12,18 +12,16 @@
       <div class="collapse navbar-collapse  w-auto " id="sidenav-collapse-main">
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link text-white active bg-gradient-primary" href="/dashboard">
+            <a class="nav-link text-white {{ $xestilo == 'dashboard' ? 'active bg-gradient-primary' : '' }}" href="/dashboard">
               <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
                 <i class="material-icons opacity-10">dashboard</i>
               </div>
-              <span class="nav-link-text ms-1">Dashboard</span>
+              <span class="nav-link-text ms-1">Dashboard </span>
             </a>
           </li>
 
-          
-
           <li class="nav-item">
-            <a class="nav-link text-white " href="../memorando">
+            <a class="nav-link text-white {{ $xestilo == 'memorando' ? 'active bg-gradient-primary' : '' }}" href="../memorando">
               <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
                 <i class="material-icons opacity-10">receipt_long</i>
               </div>
@@ -32,7 +30,7 @@
           </li>
 
           <li class="nav-item">
-            <a class="nav-link text-white " href="../oficio">
+            <a class="nav-link text-white {{ $xestilo == 'oficio' ? 'active bg-gradient-primary' : '' }}" href="../oficio">
               <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
                 <i class="material-icons opacity-10">receipt_long</i>
               </div>
