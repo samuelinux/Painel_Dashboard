@@ -55,14 +55,7 @@
               <span class="nav-link-text ms-1">Virtual Reality</span>
             </a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link text-white " href="../rtl.html">
-              <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
-                <i class="material-icons opacity-10">format_textdirection_r_to_l</i>
-              </div>
-              <span class="nav-link-text ms-1">RTL</span>
-            </a>
-          </li>
+          
 
           <li class="nav-item mt-3">
             <h6 class="ps-4 ms-2 text-uppercase text-xs text-white font-weight-bolder opacity-8">Account pages</h6>
@@ -75,22 +68,19 @@
               <span class="nav-link-text ms-1">Perfil</span>
             </a>
           </li>
+
+
+
           <li class="nav-item">
-            <a class="nav-link text-white " href="../login">
+            <a class="nav-link text-white " href="/logout">
               <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
-                <i class="material-icons opacity-10">login</i>
+                <i class="material-icons opacity-10">format_textdirection_r_to_l</i>
               </div>
-              <span class="nav-link-text ms-1">Entrar</span>
+              <span class="nav-link-text ms-1">Sair</span>
             </a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link text-white " href="../registrar">
-              <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
-                <i class="material-icons opacity-10">assignment</i>
-              </div>
-              <span class="nav-link-text ms-1">Registrar</span>
-            </a>
-          </li>
+
+
         </ul>
       </div>
 
@@ -153,24 +143,7 @@
                       </div>
                     </a>
                   </li>
-                  <li class="mb-2">
-                    <a class="dropdown-item border-radius-md" href="javascript:;">
-                      <div class="d-flex py-1">
-                        <div class="my-auto">
-                          <img src="/img/small-logos/logo-spotify.svg" class="avatar avatar-sm bg-gradient-dark  me-3 ">
-                        </div>
-                        <div class="d-flex flex-column justify-content-center">
-                          <h6 class="text-sm font-weight-normal mb-1">
-                            <span class="font-weight-bold">New album</span> by Travis Scott
-                          </h6>
-                          <p class="text-xs text-secondary mb-0">
-                            <i class="fa fa-clock me-1"></i>
-                            1 day
-                          </p>
-                        </div>
-                      </div>
-                    </a>
-                  </li>
+                 
                   <li>
                     <a class="dropdown-item border-radius-md" href="javascript:;">
                       <div class="d-flex py-1">
@@ -189,15 +162,7 @@
                             </g>
                           </svg>
                         </div>
-                        <div class="d-flex flex-column justify-content-center">
-                          <h6 class="text-sm font-weight-normal mb-1">
-                            Payment successfully completed
-                          </h6>
-                          <p class="text-xs text-secondary mb-0">
-                            <i class="fa fa-clock me-1"></i>
-                            2 days
-                          </p>
-                        </div>
+                        
                       </div>
                     </a>
                   </li>
@@ -206,7 +171,7 @@
               <li class="nav-item d-flex align-items-center">
                 <a href="../sign-in.html" class="nav-link text-body font-weight-bold px-0">
                   <i class="fa fa-user me-sm-1"></i>
-                  <span class="d-sm-inline d-none">Entrar</span>
+                  <span class="d-sm-inline d-none">Entrar Aqui</span>
                 </a>
               </li>
             </ul>

@@ -18,8 +18,8 @@ return new class extends Migration
             $table->timestamp('email_verified_at')->nullable();
             $table->string('password');
             $table->string('cpf')->unique();
-            $table->string('telefone');
-            $table->boolean('ativo');
+            $table->string('telefone')->nullable();
+            $table->boolean('ativo')->default(false);
             $table->rememberToken();
             $table->timestamps();
         });

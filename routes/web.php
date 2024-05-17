@@ -3,18 +3,34 @@
 use App\Http\Controllers\{DashboardController, PerfilController, LoginController, RegistrarController, MemorandoController, OficioController};
 use Illuminate\Support\Facades\Route;
 
-Route::get('/', [DashboardController::class, 'dashboard'] );
-Route::get('/dashboard', [DashboardController::class, 'dashboard'] );
-Route::get('/index', [DashboardController::class, 'dashboard'] );
 
-Route::get('/login', [DashboardController::class, 'login'] );
+Route::middleware(['guest'])->group(function () {
 
-Route::get('/perfil', [PerfilController::class, 'perfil'] );
+    Route::get('/login', [LoginController::class, 'login'] )->name('login');
+    
+    Route::post('/auth', [LoginController::class, 'auth'])->name('auth');
+    
+    Route::get('/registrar', [RegistrarController::class, 'registrar'] );
 
-Route::get('/login', [LoginController::class, 'login'] );
+});
 
-Route::get('/registrar', [RegistrarController::class, 'registrar'] );
 
-Route::get('/memorando', [MemorandoController::class, 'memorando'] );
+Route::middleware(['auth'])->group(function (){
+    
+    Route::redirect('/', '/dashboard');
 
-Route::get('/oficio', [OficioController::class, 'oficio'] );
+    Route::redirect('/index', '/dashboard');
+
+    Route::redirect('/home', '/dashboard')->name('home');
+
+    Route::get('/dashboard', [DashboardController::class, 'dashboard'] )->name('dashboard');  
+
+    Route::get('/logout', [LoginController::class, 'logout'])->name('logout');
+
+    Route::get('/memorando', [MemorandoController::class, 'memorando'] );
+
+    Route::get('/oficio', [OficioController::class, 'oficio'] );
+
+    Route::get('/perfil', [PerfilController::class, 'perfil'] );
+
+});
