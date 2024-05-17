@@ -16,8 +16,8 @@
         <h6 class="mb-0">Informações Memorando:</h6>
       </div>
 
-      <form role="form">
-
+      <form action="/memorando" role="form" method="POST">
+        @csrf
         <div class="input-group input-group-static mb-3">
           <label class="ms-0">Setor de origem</label>
           <select class="form-control" id="exampleFormControlSelect2">
@@ -39,25 +39,25 @@
 
         <div class="input-group input-group-outline mb-3">
           <label class="form-label">Setor de Destino</label>
-          <input type="text" class="form-control">
+          <input type="text" name="setor_destino" class="form-control">
         </div>
 
         <div class="input-group input-group-outline mb-3">
           <label class="form-label">Destinatário</label>
-          <input type="text" class="form-control">
+          <input type="text" name="destinatario" class="form-control">
         </div>
 
         <div class="input-group input-group-outline mb-3">
           <label class="form-label">Assunto</label>
-          <input type="text" class="form-control">
+          <input type="text" name="assunto" class="form-control">
         </div>
 
         <div class="input-group input-group-outline mb-3">
           <label class="form-label">Texto aqui...</label>
-          <textarea rows="15" class="form-control"></textarea>
+          <textarea rows="15" name="texto" class="form-control"></textarea>
         </div>
         <div class="text-center">
-          <button type="button" class="btn btn-lg bg-gradient-primary btn-lg w-100 mt-4 mb-0">Registrar</button>
+          <input type="submit" class="btn btn-lg bg-gradient-primary btn-lg w-100 mt-4 mb-0">Registrar</input>
         </div>
       </form>
      
