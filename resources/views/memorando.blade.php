@@ -20,7 +20,7 @@
         @csrf
         <div class="input-group input-group-static mb-3">
           <label class="ms-0">Setor de origem</label>
-          <select class="form-control" id="exampleFormControlSelect2">
+          <select class="form-control" name="setor_origem" id="exampleFormControlSelect2">
             <option>ILUMINAÇÃO</option>
             <option>CEMITÉRIO</option>
             <option>PODA</option>
@@ -30,7 +30,7 @@
 
         <div class="input-group input-group-static mb-3">
           <label class="ms-0">Remetente</label>
-          <select class="form-control" id="exampleFormControlSelect2">
+          <select class="form-control" name="remetente" id="exampleFormControlSelect2">
             <option>SAMUEL</option>
             <option>ROBISON</option>
             <option>SAULO</option>
@@ -56,6 +56,7 @@
           <label class="form-label">Texto aqui...</label>
           <textarea rows="15" name="texto" class="form-control"></textarea>
         </div>
+
         <div class="text-center">
           <input type="submit" class="btn btn-lg bg-gradient-primary btn-lg w-100 mt-4 mb-0">Registrar</input>
         </div>

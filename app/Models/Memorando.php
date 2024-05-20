@@ -19,7 +19,15 @@ class Memorando extends Model
         'destinatario',
         'assunto',
         'texto',
-        'criado_por',
+        'id_criador',
     ];
+
+
+
+    public static function obterProximoNumeroMemorando(): int {
+
+        return ((int) self::max('id')) + 1;
+        
+    }
 
 }
