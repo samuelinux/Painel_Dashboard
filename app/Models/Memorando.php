@@ -26,7 +26,7 @@ class Memorando extends Model
 
     public static function obterProximoNumeroMemorando(): int {
 
-        return ((int) self::max('id')) + 1;
+        return ((int) self::max('numero_memorando')) + 1;
         
     }
 
