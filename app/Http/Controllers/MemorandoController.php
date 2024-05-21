@@ -18,32 +18,27 @@ class MemorandoController extends Controller
 
     public function store(Request $request)
     {
-        
+        // Adiciona id_criador e numero_memorando na request
+        $request->merge([
+            'id_criador' => Auth::id(),
+            'numero_memorando' => Memorando::obterProximoNumeroMemorando(),
+        ]);
 
-        $request['id_criador'] = Auth::id();
-        // Obtendo o próximo número de memorando
-        $request['numero_memorando'] = Memorando::obterProximoNumeroMemorando();
-
-        dd($request->all());
         // Validação dos dados
         $validatedData = $request->validate([
             'numero_memorando' => 'required|integer',
-            'setor_origem' => 'string|max:255',
-            'remetente' => 'string|max:255',
-            'setor_destino' => 'string|max:255',
-            'destinatario' => 'string|max:255',
-            'assunto' => 'string|max:255',
-            'texto' => 'string',
+            'setor_origem' => 'nullable|string|max:255',
+            'remetente' => 'nullable|string|max:255',
+            'setor_destino' => 'nullable|string|max:255',
+            'destinatario' => 'nullable|string|max:255',
+            'assunto' => 'nullable|string|max:255',
+            'texto' => 'nullable|string',
             'id_criador' => 'required|integer',
         ]);
 
-        
-
         // Criando o novo memorando
-        $dados = Memorando::create($validatedData);
+        $memorando = Memorando::create($validatedData);
 
-        dd($dados);
-        
-        return back();
+        return back()->with('success', 'Memorando criado com sucesso!');
     }
 }

@@ -23,7 +23,7 @@ Route::middleware(['auth'])->group(function () {
 
     Route::redirect('/home', '/dashboard')->name('home');
 
-    Route::get('/dashboard', [DashboardController::class, 'dashboard'])->name('dashboard');
+    Route::get('/dashboard', [DashboardController::class, 'dashboard'])->name('dashboard'); 
 
     Route::get('/logout', [LoginController::class, 'logout'])->name('logout');
 
