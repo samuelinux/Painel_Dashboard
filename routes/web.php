@@ -1,6 +1,6 @@
 <?php
 
-use App\Http\Controllers\{DashboardController, PerfilController, LoginController, RegistrarController, MemorandoController, OficioController};
+use App\Http\Controllers\{DashboardController, PerfilController, LoginController, RegistrarController, MemorandoController, OficioController, RelatorioController};
 use Illuminate\Contracts\Cache\Store;
 use Illuminate\Support\Facades\Route;
 
@@ -33,4 +33,6 @@ Route::middleware(['auth'])->group(function () {
     Route::get('/oficio', [OficioController::class, 'oficio']);
 
     Route::get('/perfil', [PerfilController::class, 'perfil']);
+
+    Route::get('/relatorio', [RelatorioController::class, 'relatorio']);
 });

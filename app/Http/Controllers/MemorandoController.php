@@ -39,6 +39,7 @@ class MemorandoController extends Controller
         // Criando o novo memorando
         $memorando = Memorando::create($validatedData);
 
-        return back()->with('success', 'Memorando criado com sucesso!');
+        return back()->with('success', 'Criado memorando N°: '. $memorando->numero_memorando);
+
     }
 }

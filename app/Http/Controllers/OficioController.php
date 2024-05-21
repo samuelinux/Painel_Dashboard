@@ -3,14 +3,10 @@
 namespace App\Http\Controllers;
 
 
-
 class OficioController extends Controller
 {
-    public Function oficio(){
-
-
-        
-
+    public function oficio()
+    {
         return view('oficio');
     }
 }
