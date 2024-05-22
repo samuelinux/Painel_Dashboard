@@ -3,13 +3,13 @@
 <x-topo />
 
 <body class="g-sidenav-show  bg-gray-200">
-<x-menu xestilo="relatorio" />
+    <x-menu xestilo="relatorio" />
 
     <!-- inicio FORM -->
     <h2 style="font-size: 24px; font-weight: bold; margin-bottom: 20px;">Formulário de Pesquisa</h2>
     <form>
 
-        <div class="d-md-flex mb-1 me-4 me-md-5 bg-info ">
+        <div class="d-md-flex mb-1 bg-info">
             <div class="col-4 col-md-auto">
                 <label for="ano">Ano:</label>
                 <input type="number" id="ano" name="ano" value="2024" class="rounded-2">
@@ -23,7 +23,7 @@
                 </select>
             </div>
 
-            <div class="col-12 col-md-auto">
+            <div class="col-12 col-md-auto mb-0">
                 <label for="setorOrigem">Setor Origem:</label>
                 <select id="setorOrigem" name="setorOrigem" class="rounded-2">
                     <option value="RH">RH</option>
@@ -34,10 +34,10 @@
             </div>
         </div>
 
-        <div class="d-md-flex mb-2 me-4 me-md-5 bg-info ">
+        <div class="d-md-flex mb-0 bg-info gap-3">
             <div class="col-md-auto">
-                <label for="remetente">Remetente:</label>
-                <select id="remetente" name="remetente" class="rounded-2">
+                <label for="remetente" class="w-100">Remetente:</label>
+                <select id="remetente" name="remetente" class="rounded-2 w-100">
                     <option value="RH">RH</option>
                     <option value="Financeiro">Financeiro</option>
                     <option value="Vendas">Vendas</option>
@@ -45,39 +45,71 @@
                 </select>
             </div>
 
-            <div class="col-md-auto">
-                <label for="tipo">Criador:</label>
-                <select id="tipo" name="tipo" class="rounded-2">
+            <div class="col-md-auto mb-0">
+                <label for="tipo" class="w-100">Criador:</label>
+                <select id="tipo" name="tipo" class="rounded-2 w-100">
                     <option value="Memorando">Meus</option>
                     <option value="Ofício">Todos</option>
                 </select>
             </div>
 
-            
 
-            <div class="col-md-auto">
-                <label for="assunto" >Assunto:</label>
-                <input type="text" id="assunto" name="assunto" class="rounded-2" >
+
+            <div class="col-md-4 mb-0">
+                <label for="assunto">Assunto:</label>
+                <input type="text" id="assunto" name="assunto" class="rounded-2 w-100">
             </div>
 
-            
+
 
         </div>
 
-        <div class="form-group bg-info" style="margin-top: 1px;">
-            <label for="texto" style="display: block; margin-top: 1px;">Texto:</label>
-            <textarea class="rounded-2" id="texto" name="texto"
-            style="width: 95%; height: 100px; padding: 8px; border: 1px solid #ccc; border-radius: 4px;"></textarea>
+        <div class="col-md-4 mb-0">
+            <label class="mb-0"for="assunto">Texto:</label>
+            <input type="text" id="assunto" name="assunto" class="rounded-2 w-100 mb-2">
         </div>
 
-        <button type="submit" class="btn btn-primary" style="background-color: #007bff; color: white; padding: 10px 15px; border: none; border-radius: 4px; cursor: pointer;">Pesquisar</button>
+        <button type="submit" class="btn btn-primary"
+            style="background-color: #007bff; color: white; padding: 10px 15px; border: none; border-radius: 4px; cursor: pointer;">Pesquisar</button>
     </form>
 
 
+    <div class="bd-example">
+        <table class="table table-light table-bordered border border-dark ">
+            <thead class="">
+                <tr class="">
+                    <th scope="col" class="ps-2 border border-dark">Nº</th>
+                    <th scope="col" class="ps-2 border border-dark">Destino</th>
+                    <th scope="col" class="ps-2 border border-dark">Assunto</th>
+                    <th scope="col" class="ps-2 border border-dark">Opções</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="ps-2 border border-dark">00128/2024</th>
+                    <td class="ps-2 border border-dark">Cell</td>
+                    <td class="ps-2 border border-dark">Cell</td>
+                    <td class="ps-2 border border-dark">Cell</td>
+                </tr>
+                
+            </tbody>
+            <tfoot>
+
+            </tfoot>
+        </table>
+    </div>
 
 
-<!-- fim FORM -->
-<x-scripts-rodape />
+    
+
+
+
+
+
+
+
+    <!-- fim FORM -->
+    <x-scripts-rodape />
 </body>
 
 </html>
