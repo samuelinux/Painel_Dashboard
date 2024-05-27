@@ -7,8 +7,8 @@
 
     <!-- inicio FORM -->
     <h2 style="font-size: 24px; font-weight: bold; margin-bottom: 20px;">Formulário de Pesquisa</h2>
-    <form action="{{ route('listar') }}" role="form" class="" method="POST">
-
+    <form action="{{ url('pesquisar') }}" role="form" class="" method="POST">
+        @csrf
         <div class="d-md-flex mb-1 bg-info">
             <div class="col-4 col-md-auto">
                 <label for="ano">Ano:</label>

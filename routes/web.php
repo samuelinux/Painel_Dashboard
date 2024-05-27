@@ -35,4 +35,7 @@ Route::middleware(['auth'])->group(function () {
     Route::get('/perfil', [PerfilController::class, 'perfil']);
 
     Route::get('/relatorio', [RelatorioController::class, 'relatorio']);
+    Route::post('/pesquisar', [RelatorioController::class, 'pesquisar']);
+
+
 });

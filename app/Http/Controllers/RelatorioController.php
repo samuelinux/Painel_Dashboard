@@ -9,4 +9,10 @@ class RelatorioController extends Controller
     {
         return view('relatorio');
     }
+
+    public function pesquisar()
+    {
+        return view('relatorio');
+    }
+
 }
