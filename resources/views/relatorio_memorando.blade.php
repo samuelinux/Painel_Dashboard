@@ -3,7 +3,7 @@
 <x-topo />
 
 <body class="g-sidenav-show  bg-gray-200">
-    <x-menu xestilo="relatorio" />
+    <x-menu xestilo="relatorio_memorando" />
 
     <!-- inicio FORM -->
     <h2 style="font-size: 24px; font-weight: bold; margin-bottom: 20px;">Formulário de Pesquisa</h2>
@@ -85,28 +85,30 @@
                 </tr>
             </thead>
             <tbody>
+
+                @forelse ( $contas as $conta )
+                    
                 <tr>
-                    <td class="ps-2 border border-dark">00128/2024</th>
-                    <td class="ps-2 border border-dark">Cell</td>
-                    <td class="ps-2 border border-dark">Cell</td>
-                    <td class="ps-2 border border-dark">Cell</td>
+                    <td class="ps-2 border border-dark">{{ $conta->numero_memorando }}</th>
+                    <td class="ps-2 border border-dark">{{ $conta->setor_destino }}</td>
+                    <td class="ps-2 border border-dark">{{ $conta->assunto }}</td>
+                    <td class="ps-2 border border-dark">{{ \Carbon\Carbon::parse($conta->created_at)->timezone('America/Sao_Paulo')->format('d/m/Y H:i:s') }}</td>
                 </tr>
+
+
+                @empty
+                    <span style="color: #f00;"> Nenhum dado encontrado </span>
+                @endforelse
+
+
                 
+
             </tbody>
             <tfoot>
 
             </tfoot>
         </table>
     </div>
-
-
-    
-
-
-
-
-
-
 
     <!-- fim FORM -->
     <x-scripts-rodape />
